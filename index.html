@@ -7,44 +7,52 @@
     <title>TrainSched</title>
 
     <script src="app.js" defer></script>
+    <script src="configurations/cityStations.js"></script>
+    <script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+    <script src="vendor/semantic-ui/semantic.min.js"></script>
+    <script src="vendor/moment.js/moment.js"></script>
 
+    <link rel="stylesheet" href="vendor/semantic-ui/semantic.min.css">
   </head>
 
   <body>
-    起站
-    <select id="FromCity" name="FromCity" onchange="ChangeCity2('FromCity','FromStation')">
-      <option value="-1">請選擇縣市</option>
-      <option value="0">臺北地區</option>
-      <option value="1">桃園地區</option>
-      <option value="2">新竹地區</option>
-      <option value="3">苗栗地區</option>
-      <option value="4">臺中地區</option>
-      <option value="5">彰化地區</option>
-      <option value="6">南投地區</option>
-      <option value="7">雲林地區</option>
-      <option value="8">嘉義地區</option>
-      <option value="9">臺南地區</option>
-      <option value="10">高雄地區</option>
-      <option value="11">屏東地區</option>
-      <option value="12">臺東地區</option>
-      <option value="13">花蓮地區</option>
-      <option value="14">宜蘭地區</option>
-      <option value="15">平溪/深澳線</option>
-      <option value="16">內灣/六家線</option>
-      <option value="17">集集線</option>
-      <option value="18">沙崙線</option>
-    </select>
+    <div class="ui container">
+      <div class="ui sixteen grid">
+        <div class="row">
+          <label class="three wide column">起站</label>
 
-    訖站
-    <select>
-      <option>臺北</option>
-      <option>臺中</option>
-      <option>臺南</option>
-    </select>
+          <select id="from_city" class="six wide column">
+          </select>
+
+          <select id="from_station" class="six wide column">
+          </select>
+        </div>
+
+        <div class="row">
+          <label class="three wide column">訖站</label>
+          <select id="to_city" class="six wide column">
+          </select>
+
+          <select id="to_station" class="six wide column">
+          </select>
+        </div>
+
+        <div class="row">
+          <label class="three wide column">時間</label>
+          <input type="date" id="date" name="date" class="six wide column" />
+          <input type="time" id="time" name="time" class="six wide column" />
+        </div>
+
+        <div class="ui fluid buttons tabable" id="car_class">
+          <button class="ui button active" data-value="2">所有車種</button>
+          <button class="ui button" data-value="'1100','1101','1102','1107','1108','1110','1120','1114','1115'">對號列車</button>
+          <button class="ui button" data-value="'1131','1132','1140'">非對號列車</button>
+        </div>
+
+        <div class="sixteen wide column">
+          <button class="ui fluid blue button" id="search">時刻查詢</button>
+        </div>
+      </div>
+    </div>
   </body>
-
-  <script>
-    var city = ['臺北', ''];
-
-  </script>
 </html>
