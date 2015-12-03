@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>TrainSched</title>
+
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    起站
+    <select id="FromCity" name="FromCity" onchange="ChangeCity2('FromCity','FromStation')">
+      <option value="-1">請選擇縣市</option>
+      <option value="0">臺北地區</option>
+      <option value="1">桃園地區</option>
+      <option value="2">新竹地區</option>
+      <option value="3">苗栗地區</option>
+      <option value="4">臺中地區</option>
+      <option value="5">彰化地區</option>
+      <option value="6">南投地區</option>
+      <option value="7">雲林地區</option>
+      <option value="8">嘉義地區</option>
+      <option value="9">臺南地區</option>
+      <option value="10">高雄地區</option>
+      <option value="11">屏東地區</option>
+      <option value="12">臺東地區</option>
+      <option value="13">花蓮地區</option>
+      <option value="14">宜蘭地區</option>
+      <option value="15">平溪/深澳線</option>
+      <option value="16">內灣/六家線</option>
+      <option value="17">集集線</option>
+      <option value="18">沙崙線</option>
+    </select>
+
+    訖站
+    <select>
+      <option>臺北</option>
+      <option>臺中</option>
+      <option>臺南</option>
+    </select>
+  </body>
+
+  <script>
+    var city = ['臺北', ''];
+
+  </script>
+</html>
