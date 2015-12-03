@@ -59,8 +59,6 @@ function initButtonsTab() {
 }
 
 function initSearchButton() {
-    // var requestURL = "http://twtraffic.tra.gov.tw/twrail/SearchResult.aspx?searchtype=0&searchdate=2015/12/03&fromcity=7&tocity=5&fromstation=1210&tostation=1120&trainclass=2&timetype=1&fromtime=0000&totime=2359";
-
     var dateInputor = $('#date');
     var timeInputor = $('#time');
     var fromCitySelector = $('#from_city');
@@ -72,7 +70,7 @@ function initSearchButton() {
     $('#search').click(function () {
         var params = {
             searchtype: 0,
-            searchdate: moment(dateInputor.val()).format("YYYY/MM/DD"),
+            searchdate: formatToSearchDate(moment, dateInputor.val()),
             fromcity: fromCitySelector.val(),
             tocity: toCitySelector.val(),
             fromstation: fromStationSelector.val(),

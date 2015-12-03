@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/bdsword/TrainSched#readme",
   "dependencies": {
-		"mocha": "latest"
+		"mocha": "latest",
+    "moment": "latest"
   }
 }
