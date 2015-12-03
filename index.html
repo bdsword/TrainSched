@@ -13,41 +13,47 @@
     <script src="vendor/moment.js/moment.js"></script>
 
     <link rel="stylesheet" href="vendor/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
     <div class="ui container">
+      <h1 class="title">Train Sched</h1>
       <div class="ui sixteen grid">
         <div class="row">
-          <label class="three wide column">起站</label>
+          <label class="row_label three wide column">起站</label>
 
-          <select id="from_city" class="six wide column">
+          <select id="from_city" class="left six wide column">
           </select>
 
-          <select id="from_station" class="six wide column">
-          </select>
-        </div>
-
-        <div class="row">
-          <label class="three wide column">訖站</label>
-          <select id="to_city" class="six wide column">
-          </select>
-
-          <select id="to_station" class="six wide column">
+          <select id="from_station" class="right six wide column">
           </select>
         </div>
 
         <div class="row">
-          <label class="three wide column">時間</label>
+          <label class="row_label three wide column">訖站</label>
+          <select id="to_city" class="left  six wide column">
+          </select>
+
+          <select id="to_station" class="right six wide column">
+          </select>
+        </div>
+
+        <div class="row">
+          <label class="row_label three wide column">時間</label>
           <input type="date" id="date" name="date" class="six wide column" />
           <input type="time" id="time" name="time" class="six wide column" />
         </div>
 
+        <div class="ui hidden divider"></div>
+
         <div class="ui fluid buttons tabable" id="car_class">
-          <button class="ui button active" data-value="2">所有車種</button>
-          <button class="ui button" data-value="'1100','1101','1102','1107','1108','1110','1120','1114','1115'">對號列車</button>
-          <button class="ui button" data-value="'1131','1132','1140'">非對號列車</button>
+          <button class="ui gray button active" data-value="2">所有車種</button>
+          <button class="ui gray button" data-value="'1100','1101','1102','1107','1108','1110','1120','1114','1115'">對號</button>
+          <button class="ui gray button" data-value="'1131','1132','1140'">非對號</button>
         </div>
+
+        <div class="ui hidden divider"></div>
 
         <div class="sixteen wide column">
           <button class="ui fluid blue button" id="search">時刻查詢</button>

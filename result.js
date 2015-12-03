@@ -18,12 +18,21 @@ window.addEventListener("load", function() {
         var takeTime = $(fields[6]).text().trim();
         var money = $(fields[8]).text().trim();
 
-        console.log([className, trainCode, mountainOrSea, startEndStation, sourceTime, destTime, takeTime, money]);
-        $('#result #body').append($("<div class='row'></div>")
-            .append($("<div class='four wide column'></div>").text(className + '/' + trainCode))
-            .append($("<div class='four wide column'></div>").text(sourceTime))
-            .append($("<div class='four wide column'></div>").text(takeTime + '/' + money))
-            .append($("<div class='four wide column'></div>").text(destTime))
+        $('#result #body').append($("<div class='tbody-row'></div>")
+            .append($("<div class='tbody-col'></div>").append(
+                    $("<div class='car-class'></div>").text(className)
+                ).append(
+                    $("<div class='car-code'></div>").text(trainCode)
+                )
+            )
+            .append($("<div class='tbody-col'></div>").text(sourceTime))
+            .append($("<div class='tbody-col'></div>").append(
+                    $("<div class='taketime'></div>").text(takeTime)
+                ).append(
+                    $("<div class='money'></div>").text(money)
+                )
+            )
+            .append($("<div class='tbody-col'></div>").text(destTime))
         );
     });
 

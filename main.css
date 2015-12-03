@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Shoes center'; /*a name to be used later*/
+    src: url('fonts/Shoes center.ttf'); /*URL to font*/
+}
+
+body {
+    background: url('background.jpg') 50% 50%/cover no-repeat;
+    color: #eee;
+}
+
+select {
+    color: #333;
+    background-color: #E3F2FD;
+    border: none;
+}
+
+select.left {
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: solid 1px #aaa;
+}
+
+select.right {
+    border-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+input {
+    color: #333;
+    background-color: #E3F2FD;
+}
+
+.container {
+    padding-top: 4em;
+}
+
+.title {
+    font-size: 4em;
+    font-family: 'Shoes center', Lato, 'Helvetica Neue', Arial, Helvetica,sans-serif;
+    color: #eee;
+    text-align: center;
+}
+
+.row_label {
+    line-height: 1.2142em;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: .67861429em 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#date {
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    line-height: 1.2142em;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: .67861429em 1em;
+    border: none;
+    border-right: solid 1px #aaa;
+}
+
+#time {
+    border-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    line-height: 1.2142em;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: .67861429em 1em;
+    border: none;
+}
