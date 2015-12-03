@@ -1,0 +1,27 @@
+{
+  "name": "trainsched",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdsword/TrainSched.git"
+  },
+  "keywords": [
+    "webapp",
+    "train",
+    "scheduler"
+  ],
+  "author": "bdsword",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdsword/TrainSched/issues"
+  },
+  "homepage": "https://github.com/bdsword/TrainSched#readme",
+  "dependencies": {
+		"mocha": "latest"
+  }
+}
