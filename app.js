@@ -59,15 +59,15 @@ function initButtonsTab() {
 }
 
 function initSearchButton() {
-    var dateInputor = $('#date');
-    var timeInputor = $('#time');
-    var fromCitySelector = $('#from_city');
-    var toCitySelector = $('#to_city');
-    var fromStationSelector = $('#from_station');
-    var toStationSelector = $('#to_station');
-    var carClass = $('#car_class .active').attr('data-value');
-
     $('#search').click(function () {
+        var dateInputor = $('#date');
+        var timeInputor = $('#time');
+        var fromCitySelector = $('#from_city');
+        var toCitySelector = $('#to_city');
+        var fromStationSelector = $('#from_station');
+        var toStationSelector = $('#to_station');
+        var carClass = $('#car_class .active').attr('data-value');
+
         var params = {
             searchtype: 0,
             searchdate: formatToSearchDate(moment, dateInputor.val()),
